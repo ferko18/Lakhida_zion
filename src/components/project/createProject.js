@@ -50,7 +50,7 @@ function CreateProject (props) {
     <Formik
       initialValues={{
         projectname: "",
-        projectId: "",
+        projectId: Date.now(),
         company: '',
         projectdescription: '',
         projecttype: '',
@@ -94,7 +94,7 @@ function CreateProject (props) {
                     className="form-control"
                   />
                 </div>
-                <div className="form-group">
+                {/* <div className="form-group">
                   {touched.projectId && errors.projectId && (
                     <p>{errors.projectId}</p>
                   )}
@@ -104,7 +104,7 @@ function CreateProject (props) {
                     placeholder="Project ID"
                     className="form-control"
                   />
-                </div>
+                </div> */}
                 <div className="form-group">
                   {touched.company && errors.company && (
                     <p>{errors.company}</p>
