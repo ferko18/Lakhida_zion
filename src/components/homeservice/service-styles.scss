@@ -1,0 +1,136 @@
+// .servicecontainer {
+//   //height: 500px;
+//   background-color: #ffffff;
+//   background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+//   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+//   justify-content: center;
+//   display: flex;
+//   align-content: center;
+// }
+
+// .row {
+//   width: 80%;
+//   display: flex;
+//   justify-content: center;
+
+//   padding-top: 0.5%;
+//   padding-bottom: 0.5%;
+//   @media only screen and (max-width: 1000px) {
+//     width: 100%;
+//     flex-direction: column;
+//     .col-sm-3 {
+//       max-width: 100%;
+//       padding-top: 0.5%;
+//       padding-bottom: 0.5%;
+//     }
+//   }
+// }
+// .card {
+//   -webkit-box-shadow: 26px 0px 33px 0px rgba(0, 0, 0, 0.69);
+//   -moz-box-shadow: 26px 0px 33px 0px rgba(0, 0, 0, 0.69);
+//   box-shadow: 26px 0px 33px 0px rgba(0, 0, 0, 0.69);
+
+//   &:hover,
+//   :focus,
+//   :active {
+//     background-color: #000000 !important;
+//     cursor: pointer;
+//     opacity: 0.9;
+//     transition: 1.2s;
+//     transform: scale(1.1, 1.03);
+//   }
+//   .imgcontainer {
+//     display: flex;
+//     justify-content: center;
+//     img {
+//       max-width: 150px;
+//     }
+//   }
+//   @media only screen and (max-width: 1000px) {
+//     -webkit-box-shadow: none;
+//     -moz-box-shadow: none;
+//     box-shadow: none;
+//   }
+// }
+
+// .animatedbackground {
+//   width: 100%;
+//   z-index: +1;
+// }
+.servicecontainer {
+  //height: 500px;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.row {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    .col-sm-3 {
+      max-width: 100%;
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+    }
+  }
+}
+.card {
+  -webkit-box-shadow: 26px 0px 33px 0px rgba(0, 0, 0, 0.69);
+  box-shadow: 26px 0px 33px 0px rgba(0, 0, 0, 0.69);
+
+  &:hover,
+  :focus,
+  :active {
+    background-color: #000000 !important;
+    cursor: pointer;
+    opacity: 0.9;
+    -webkit-transition: 1.2s;
+    -o-transition: 1.2s;
+    transition: 1.2s;
+    -webkit-transform: scale(1.1, 1.03);
+        -ms-transform: scale(1.1, 1.03);
+            transform: scale(1.1, 1.03);
+  }
+  .imgcontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    img {
+      max-width: 150px;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+.animatedbackground {
+  width: 100%;
+  z-index: +1;
+}
